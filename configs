@@ -1,3 +1,3 @@
-REMOTE_HOST=<your remote host>
+REMOTE_HOST=example.com
 REMOTE_PORT=22
 REMOTE_USER=username
