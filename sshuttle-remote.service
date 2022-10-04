@@ -1,0 +1,12 @@
+[Unit]
+Description=sshuttle to a remote host.
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/bin/bash /usr/sbin/example.sh
+
+[Install]
+WantedBy=multi-user.target
