@@ -1,6 +1,6 @@
 # Sshuttle to another server
 
-### Tested at Ubuntu 22
+### Tested on Ubuntu 22
 
 Run `git clone https://github.com/hosseinm1997/sshuttle-over-sshuttle.git`
 
