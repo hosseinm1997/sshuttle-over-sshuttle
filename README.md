@@ -22,7 +22,7 @@ Start the service by `systemctl start sshuttle-tunnel.service`
 
 Check the connectivity status by: `systemctl status sshuttle-tunnel.service`
 
-It must be something like: `c : Connected to server.`
+It must print: `c : Connected to server.`
 
 
 You can enable the service to start tunneling at startup by: `systemctl enable sshuttle-tunnel.service`
