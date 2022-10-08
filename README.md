@@ -28,7 +28,7 @@ It must print: `c : Connected to server.`
 You can enable the service to start tunneling at startup by: `systemctl enable sshuttle-tunnel.service`
 
 
-#### For connecting other VPN protocols via SSHUTTLE serve 
+#### For connecting other VPN protocols via SSHUTTLE server
 ##### 1. Enable IP forwarding 
 by editing `vim /etc/sysctl.conf` and seting `net.ipv4.ip_forward = 1`.
 
