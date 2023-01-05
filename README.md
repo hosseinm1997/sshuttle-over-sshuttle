@@ -42,3 +42,7 @@ You can find MAIN_INTERFACE_NAME by `ifconfig` command.
 `apt-get -y install iptables-persistent`
 
 `dpkg-reconfigure iptables-persistent`
+
+For better performance restart the service at the certain intervals. You can run this command to add it to your crontab.
+
+`echo -en '*/5 * * * * root bash -c "F=$(ifconfig | grep vpn | wc -l); (( F > 0 )) && systemctl restart sshuttle-tunnel.service > /dev/null 2>&1"\n' > /etc/cron.d/restart-sshuttle-service`
