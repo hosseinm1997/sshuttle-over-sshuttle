@@ -45,4 +45,4 @@ You can find MAIN_INTERFACE_NAME by `ifconfig` command.
 
 For better performance restart the service at the certain intervals. You can run this command to add it to your crontab.
 
-`echo -en '*/5 * * * * root bash -c "F=$(ifconfig | grep vpn | wc -l); (( F > 0 )) && systemctl restart sshuttle-tunnel.service > /dev/null 2>&1"\n' > /etc/cron.d/restart-sshuttle-service`
+`echo -en '*/5 * * * * root bash -c "F=$(ifconfig | grep vpn | wc -l); (( F > 0 )) && systemctl restart sshuttle-tunnel.service > /dev/null 2>&1"\n\n' > /etc/cron.d/restart-sshuttle-service`
